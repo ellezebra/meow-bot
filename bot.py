@@ -19,7 +19,7 @@ start_kb.add(KeyboardButton("🎈 Хочу оформление"))
 
 @dp.message_handler(commands=['start'])
 async def start(msg: types.Message):
-    await msg.answer("Привет! Я бот студии Meow Balloons 🎉
+    await msg.answer("Привет! Я бот студии Meow Balloons 🎉"
 Нажми кнопку ниже, чтобы оставить заявку.", reply_markup=start_kb)
 
 @dp.message_handler(lambda message: message.text == "🎈 Хочу оформление")
