@@ -36,8 +36,8 @@ async def cmd_start(message: types.Message):
 @dp.message(lambda m: m.text == "🎈 Хочу оформление")
 async def handle_request(message: types.Message):
     user = message.from_user
-    text = f"🎉 Новая заявка от @{user.username or user.id}
-Имя: {user.full_name}"
+    text = f"""🎉 Новая заявка от @{user.username or user.id}
+Имя: {user.full_name}"""
     await bot.send_message(chat_id=TO_ID, text=text)
     await message.answer("Спасибо за заявку! Мы скоро с вами свяжемся.")
 
