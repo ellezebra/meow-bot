@@ -28,7 +28,7 @@ start_kb = ReplyKeyboardMarkup(
 @dp.message(CommandStart())
 async def cmd_start(message: types.Message):
     await message.answer(
-        "Привет! Я бот студии Meow Balloons 🎉
+        "Привет! Я бот студии Meow Balloons 🎉"
 Нажми кнопку ниже, чтобы оставить заявку.",
         reply_markup=start_kb
     )
