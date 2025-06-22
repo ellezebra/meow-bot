@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: meow-bot
+    env: python
+    buildCommand: ""
+    startCommand: python bot.py
+    pythonVersion: 3.10.13
